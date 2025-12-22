@@ -13,10 +13,10 @@ public static class BinaryOperatorRegistry
     /// </summary>
     public static readonly Dictionary<string, IBinaryOperator> Operators = new()
     {
-        {"+", new AdditionOperator()},
-        {"-", new SubtractionOperator()},
-        {"*", new MultiplicationOperator()},
-        {"/", new DivisionOperator()}
+        {AdditionOperator.Symbol, new AdditionOperator()},
+        {SubtractionOperator.Symbol, new SubtractionOperator()},
+        {MultiplicationOperator.Symbol, new MultiplicationOperator()},
+        {DivisionOperator.Symbol, new DivisionOperator()}
     };
 }
 
@@ -30,6 +30,6 @@ public static class UnaryOperatorRegistry
     /// </summary>
     public static readonly Dictionary<string, IUnaryOperator> Operators = new()
     {
-        {"-", new NegativeOperator()}
+        {NegativeOperator.Symbol, new NegativeOperator()}
     };
 }

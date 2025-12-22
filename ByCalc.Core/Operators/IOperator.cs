@@ -6,5 +6,5 @@ namespace ByCalc.Operators;
 public interface IOperator
 {
     int Precedence { get; }     /// highter precedence = evaluated first
-    string Symbol { get; }
+    static string Symbol { get; }
 }

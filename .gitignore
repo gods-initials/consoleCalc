@@ -3,3 +3,5 @@ obj/
 *.user
 *.suo
 *.vscode/
+*.vsdix
+.vs
